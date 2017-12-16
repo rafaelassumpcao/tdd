@@ -1,0 +1,24 @@
+{
+  "name": "tdd-explore",
+  "version": "1.0.0",
+  "description": "exploring tdd concepts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelassumpcao/tdd_explore.git"
+  },
+  "keywords": [
+    "tdd",
+    "js",
+    "study"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafaelassumpcao/tdd_explore/issues"
+  },
+  "homepage": "https://github.com/rafaelassumpcao/tdd_explore#readme"
+}
