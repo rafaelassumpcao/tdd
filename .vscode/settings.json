@@ -1,3 +1,7 @@
 {
-  "eslint.trace.server": "messages"
+  "eslint.trace.server": "messages",
+  "eslint.enable": true,
+  "eslint.workingDirectories": [
+    "./src"
+  ]
 }
