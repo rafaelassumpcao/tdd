@@ -1,61 +1,39 @@
 import { expect } from 'chai';
-import { sum, sub, mult, div } from '../src/main';
+import fizzBuzz from '../src/main';
 
-describe('Calc', () => {
-
-  // smoke tests
-  describe('smoke tests', () => {
-    it('should exists method sum', () => {
-      expect(sum).to.exist;
-      expect(sum).to.be.a('function');
-    });
-
-    it('should exists method minus', () => {
-      expect(sub).to.exist;
-      expect(sub).to.be.a('function');
-    });
-
-    it('should exists method multiply', () => {
-      expect(mult).to.exist;
-      expect(mult).to.be.a('function');
-    });
-
-    it('should exists method divide', () => {
-      expect(div).to.exist;
-      expect(div).to.be.a('function');
-    });
-  });
-
-  describe('Sum', () => {
-    it('should return 4 when `sum(2,2)`', () => {
-      expect(sum(2, 2)).to.be.equal(4);
-    });
-  });
-
-  describe('Sub', () => {
-    it('should return 4 when `sub(6,2)`', () => {
-      expect(sub(6, 2)).to.be.equal(4);
-    });
-
-    it('should return -4 when `sub(2,6)`', () => {
-      expect(sub(2, 6)).to.be.equal(-4);
-    });
-  });
-
-  describe('mult', () => {
-    it('should return 4 when `mult(2,2)`', () => {
-      expect(mult(2, 2)).to.be.equal(4);
-    });
-  });
-
-  describe('div', () => {
-    it('should return 4 when `div(8,2)`', () => {
-      expect(div(8, 2)).to.be.equal(4);
-    });
-
-    it('should return `It is impossible to divide by zero` when divide by zero', () => {
-      expect(div(4, 0)).to.be.equal('It is impossible to divide by zero');
-    });
-  });
-
+describe('Main', () => {
+  /*  describe('smoke tests', () => {
+     it('should exist function fizzbuzz', () => {
+       expect(fizzBuzz).to.exist;
+       expect(fizzBuzz).to.be.a('function');
+     });
+   });
+ 
+   describe('FizzBuzz function', () => {
+     it('should return \'Fizz\' when fizzBuzz(num) is of 3 but not of 5', () => {
+       expect(fizzBuzz(6)).to.be.an('string');
+       expect(fizzBuzz(6)).to.be.equal('Fizz');
+     });
+ 
+     it('should return \'Buzz\' when fizzBuzz(num) is multiple of 5 but not of 3', () => {
+       expect(fizzBuzz(10)).to.be.an('string');
+       expect(fizzBuzz(10)).to.be.equal('Buzz');
+       expect(fizzBuzz(20)).to.be.equal('Buzz');
+     });
+ 
+     it('should return FizzBuzz when fizzBuzz(num) is multiple of both 3 and 5', () => {
+       expect(fizzBuzz(30)).to.be.an('string');
+       expect(fizzBuzz(15)).to.be.equal('FizzBuzz');
+       expect(fizzBuzz(30)).to.be.equal('FizzBuzz');
+     });
+ 
+     it('should return num when fizzBuzz(num) is not multiple of 5 neither of 3', () => {
+       expect(fizzBuzz(13)).to.be.an('Number');
+       expect(fizzBuzz(13)).to.be.equal(13);
+     });
+ 
+     it('should return 0 when fizzBuzz(0)', () => {
+       expect(fizzBuzz(0)).to.be.equal(0);
+     });
+   }); */
 });

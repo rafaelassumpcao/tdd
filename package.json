@@ -5,11 +5,25 @@
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
-    "prepush": "npm run lint",
+    "prepush": "npm run lint && npm run test:coverage",
     "build": "webpack --colors --progress",
     "dev": "webpack-dev-server",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
-    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch --require babel-register"
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch --require babel-register",
+    "test:coverage": "nyc --cache npm test"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "functions": 80,
+    "lines": 80,
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "exclude": [
+      "tests/**",
+      "build"
+    ]
   },
   "repository": {
     "type": "git",
@@ -39,6 +53,7 @@
     "html-webpack-plugin": "^2.30.1",
     "husky": "^0.14.3",
     "mocha": "^5.0.1",
+    "nyc": "^11.4.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
   },
