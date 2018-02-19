@@ -118,3 +118,7 @@ typings/
 
 # next.js build output
 .next
+
+#customs
+./dist/
+.vscode/
